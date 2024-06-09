@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jobquest-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8afc37ad32fe9e952dd7afa25c5e8ffe2c16474c")]
 [assembly: System.Reflection.AssemblyProductAttribute("jobquest-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jobquest-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,8 +8,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.3.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Configuration\" />
+      <Folder Include="Filters\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\jobquest.Application\jobquest.Application.csproj" />
+      <ProjectReference Include="..\jobquest.Infrastructure\jobquest.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
