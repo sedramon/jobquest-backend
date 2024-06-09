@@ -1,0 +1,211 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj",
+        "projectName": "jobquest.Application",
+        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj",
+        "packagesPath": "/home/abozic/.nuget/packages/",
+        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/abozic/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj": {
+                "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
+        "projectName": "jobquest.Domain",
+        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
+        "packagesPath": "/home/abozic/.nuget/packages/",
+        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/abozic/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Entities": {
+              "target": "Package",
+              "version": "[23.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj",
+        "projectName": "jobquest.Infrastructure",
+        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj",
+        "packagesPath": "/home/abozic/.nuget/packages/",
+        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/abozic/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj": {
+                "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.4.24267.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0-preview.4.24266.19, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "MongoDB.Driver.Core": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "MongoDB.Entities": {
+              "target": "Package",
+              "version": "[23.1.0, )"
+            },
+            "MongoRepository": {
+              "target": "Package",
+              "version": "[1.6.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

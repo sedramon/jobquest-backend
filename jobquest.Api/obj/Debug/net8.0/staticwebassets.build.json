@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "S++fy2yAhPU/rUVU9zJchJLBmBmoZT6f8hMizBzHCag=",
+  "Source": "jobquest.Api",
+  "BasePath": "_content/jobquest.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

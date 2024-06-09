@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj": {}
+  },
+  "projects": {
+    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
+        "projectName": "jobquest.Domain",
+        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
+        "packagesPath": "/home/abozic/.nuget/packages/",
+        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/abozic/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Entities": {
+              "target": "Package",
+              "version": "[23.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
