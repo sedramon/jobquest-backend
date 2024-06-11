@@ -11,3 +11,16 @@
 /home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/obj/Debug/net8.0/refint/jobquest.Domain.dll
 /home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/obj/Debug/net8.0/jobquest.Domain.pdb
 /home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/obj/Debug/net8.0/ref/jobquest.Domain.dll
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\bin\Debug\net8.0\jobquest.Domain.deps.json
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\bin\Debug\net8.0\jobquest.Domain.dll
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\bin\Debug\net8.0\jobquest.Domain.pdb
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.csproj.AssemblyReference.cache
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.AssemblyInfoInputs.cache
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.AssemblyInfo.cs
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.sourcelink.json
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.dll
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\refint\jobquest.Domain.dll
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\jobquest.Domain.pdb
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Domain\obj\Debug\net8.0\ref\jobquest.Domain.dll

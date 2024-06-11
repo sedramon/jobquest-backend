@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/jobquest.Api.props" />
+  <Import Project="..\buildMultiTargeting\jobquest.Api.props" />
 </Project>

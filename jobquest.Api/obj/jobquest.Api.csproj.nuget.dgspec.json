@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Api/jobquest.Api.csproj": {}
+    "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Api\\jobquest.Api.csproj": {}
   },
   "projects": {
-    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Api/jobquest.Api.csproj": {
+    "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Api\\jobquest.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Api/jobquest.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Api\\jobquest.Api.csproj",
         "projectName": "jobquest.Api",
-        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Api/jobquest.Api.csproj",
-        "packagesPath": "/home/abozic/.nuget/packages/",
-        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Api/obj/",
+        "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Api\\jobquest.Api.csproj",
+        "packagesPath": "C:\\Users\\Aljosa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/abozic/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Aljosa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj": {
-                "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj"
+              "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\jobquest.Application.csproj": {
+                "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\jobquest.Application.csproj"
               },
-              "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj": {
-                "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj"
+              "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Infrastructure\\jobquest.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Infrastructure\\jobquest.Infrastructure.csproj"
               }
             }
           }
@@ -47,7 +47,7 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[12.3.0, )"
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Aljosa\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj": {
+    "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\jobquest.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\jobquest.Application.csproj",
         "projectName": "jobquest.Application",
-        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj",
-        "packagesPath": "/home/abozic/.nuget/packages/",
-        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/obj/",
+        "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\jobquest.Application.csproj",
+        "packagesPath": "C:\\Users\\Aljosa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/abozic/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Aljosa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -103,8 +103,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj": {
-                "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj"
+              "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\jobquest.Domain.csproj": {
+                "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\jobquest.Domain.csproj"
               }
             }
           }
@@ -118,6 +118,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
+            "MongoDB.Entities": {
+              "target": "Package",
+              "version": "[23.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -134,21 +156,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Aljosa\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj": {
+    "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\jobquest.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\jobquest.Domain.csproj",
         "projectName": "jobquest.Domain",
-        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
-        "packagesPath": "/home/abozic/.nuget/packages/",
-        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/obj/",
+        "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\jobquest.Domain.csproj",
+        "packagesPath": "C:\\Users\\Aljosa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/abozic/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Aljosa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -193,21 +215,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Aljosa\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj": {
+    "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Infrastructure\\jobquest.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Infrastructure\\jobquest.Infrastructure.csproj",
         "projectName": "jobquest.Infrastructure",
-        "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/jobquest.Infrastructure.csproj",
-        "packagesPath": "/home/abozic/.nuget/packages/",
-        "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Infrastructure\\jobquest.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Aljosa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/abozic/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Aljosa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -219,8 +241,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj": {
-                "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Application/jobquest.Application.csproj"
+              "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\jobquest.Application.csproj": {
+                "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Application\\jobquest.Application.csproj"
               }
             }
           }
@@ -280,7 +302,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Aljosa\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

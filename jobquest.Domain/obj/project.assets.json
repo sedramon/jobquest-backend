@@ -891,19 +891,19 @@
     ]
   },
   "packageFolders": {
-    "/home/abozic/.nuget/packages/": {}
+    "C:\\Users\\Aljosa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\jobquest.Domain.csproj",
       "projectName": "jobquest.Domain",
-      "projectPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/jobquest.Domain.csproj",
-      "packagesPath": "/home/abozic/.nuget/packages/",
-      "outputPath": "/home/abozic/RiderProjects/jobquest-backend/jobquest.Domain/obj/",
+      "projectPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\jobquest.Domain.csproj",
+      "packagesPath": "C:\\Users\\Aljosa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/abozic/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Aljosa\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -948,7 +948,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/abozic/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Aljosa\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
