@@ -1,3 +1,5 @@
+using jobquest.Application.Commands.Users;
+using jobquest.Application.Common.Dtos;
 using jobquest.Application.Queries.Users;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +9,9 @@ namespace jobquest_backend.Controllers;
 [Route("api/user")]
 public class UserController : ApplicationController
 {
-    [HttpPost("get/all")]
-    public async Task<OkObjectResult> GetAl() => Ok(await Mediator.Send(new GetAllQuery()));
+    [HttpGet("get/all")]
+    public async Task<OkObjectResult> GetAll() => Ok(await Mediator.Send(new GetAllQuery()));
+    
+    [HttpPost("create")]
+    public async Task<OkObjectResult> CreateUser(UserDto dto) => Ok(await Mediator.Send(new CreateUserCommand(dto)));
 }
