@@ -9,7 +9,10 @@ public class MappingProfile : Profile
     public MappingProfile()
     {
         CreateMap<JobPost, JobPostDto>().ReverseMap();
-        CreateMap<Company, CompanyDto>().ReverseMap();
-        CreateMap<JobPost, Company>().ForMember(dest => dest.ID, opt => opt.MapFrom(src => src.Company));
+        CreateMap<Company, CompanyDto>()
+            .ForMember(dest => dest.Password, opt => opt.Ignore())
+            .ReverseMap();
+        CreateMap<JobPost, Company>()
+            .ForMember(dest => dest.ID, opt => opt.MapFrom(src => src.Company));
     }
 }

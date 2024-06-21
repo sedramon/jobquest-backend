@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jobquest.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd828328147462a9e58e73eed2482c91237c6a51")]
 [assembly: System.Reflection.AssemblyProductAttribute("jobquest.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jobquest.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

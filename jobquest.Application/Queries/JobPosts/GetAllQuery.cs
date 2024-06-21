@@ -29,10 +29,22 @@ public class GetAllHandler : IRequestHandler<GetAllQuery, List<JobPostDto>>
         {
             var company = jobPost.Company != null ? await jobPost.Company.ToEntityAsync(cancellation: cancellationToken) : null;
 
+            var companyDto = company != null ? new CompanyDto(
+                company.ID,
+                company.CompanyName,
+                company.CompanyAddress,
+                company.CompanyPhone,
+                company.Activity,
+                company.MB,
+                company.PIB,
+                company.Email,
+                null // Exclude the Password field
+            ) : null;
+            
             var jobPostDto = new JobPostDto(
                 jobPost.ID,
                 jobPost.Title,
-                company != null ? _mapper.Map<CompanyDto>(company) : null,
+                companyDto,
                 jobPost.Description,
                 jobPost.FieldOfWork,
                 jobPost.Location,
