@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace jobquest_backend.Controllers;
 
 [ApiController]
-[Route("/api/jobpost")]
+[Route("api/jobpost")]
 public class JobPostController : ApplicationController
 {
     [HttpPost("create")]
@@ -18,4 +18,7 @@ public class JobPostController : ApplicationController
     [HttpDelete("delete")]
     public async Task<OkObjectResult> DeleteJobPost(string jobPostId) =>
         Ok(await Mediator.Send(new DeleteJobPostCommand(jobPostId)));
+    
+    [HttpGet("get/one")]
+    public async Task<OkObjectResult> GetOne(string jobPostId) => Ok(await Mediator.Send(new GetOneQuery(jobPostId)));
 }
