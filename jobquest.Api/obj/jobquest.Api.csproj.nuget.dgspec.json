@@ -131,6 +131,14 @@
               "target": "Package",
               "version": "[11.1.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.6.2, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.25.0, )"
@@ -138,6 +146,10 @@
             "MongoDB.Entities": {
               "target": "Package",
               "version": "[23.1.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.2, )"
             }
           },
           "imports": [

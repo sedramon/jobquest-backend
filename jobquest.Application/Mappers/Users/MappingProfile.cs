@@ -8,6 +8,8 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        CreateMap<UserDto, User>().ReverseMap();
+        CreateMap<UserDto, User>()
+            .ForMember(dest => dest.Phone, opt => opt.MapFrom(src => src.Phone ?? string.Empty))
+            .ReverseMap();
     }
 }

@@ -1,5 +1,6 @@
 using jobquest_backend.Configuration;
 using jobquest.Application;
+using jobquest.Application.Commands.Authentication;
 using jobquest.Infrastructure;
 using Microsoft.Net.Http.Headers;
 
@@ -15,6 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 var corsConfiguration = new CorsConfiguration();
 builder.Configuration.GetSection("Cors").Bind(corsConfiguration);

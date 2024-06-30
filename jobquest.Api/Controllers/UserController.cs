@@ -2,6 +2,7 @@ using jobquest.Application.Commands.Users;
 using jobquest.Application.Common.Dtos;
 using jobquest.Application.Exceptions;
 using jobquest.Application.Queries.Users;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Entities;
 
@@ -11,6 +12,13 @@ namespace jobquest_backend.Controllers;
 [Route("api/user")]
 public class UserController : ApplicationController
 {
+    private readonly ILogger<UserController> _logger;
+
+    public UserController(ILogger<UserController> logger)
+    {
+        _logger = logger;
+    }
+    
     [HttpGet("get/all")]
     public async Task<OkObjectResult> GetAll() => Ok(await Mediator.Send(new GetAllQuery()));
     
@@ -18,11 +26,11 @@ public class UserController : ApplicationController
     public async Task<OkObjectResult> CreateUser(UserDto dto) => Ok(await Mediator.Send(new CreateUserCommand(dto)));
 
     [HttpGet("get/one")]
-    public async Task<IActionResult> GetOne(string email)
+    public async Task<IActionResult> GetOne(string email, string password)
     {
         try
         {
-            return Ok(await Mediator.Send(new GetUserByEmailQuery(email)));
+            return Ok(await Mediator.Send(new GetUserByEmailAndPasswordQuery(email, password)));
         }
         catch (UserNotFoundException e)
         {
@@ -30,6 +38,7 @@ public class UserController : ApplicationController
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "An error occurred while processing the request.");
             return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
         }
         
