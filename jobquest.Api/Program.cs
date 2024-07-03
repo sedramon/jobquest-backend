@@ -47,6 +47,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors(ConstantsConfiguration.AllowedOrigins);
 
+
 app.UseHttpsRedirection();
 
 app.MapControllers();

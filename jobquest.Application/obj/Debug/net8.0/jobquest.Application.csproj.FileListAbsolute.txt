@@ -25,8 +25,8 @@ C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\ne
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\jobquest.Application.AssemblyInfo.cs
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\jobquest.Application.csproj.CoreCompileInputs.cache
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\jobquest.Application.sourcelink.json
-C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\jobquest.Application.csproj.CopyComplete
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\jobquest.Application.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\refint\jobquest.Application.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\jobquest.Application.pdb
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\ref\jobquest.Application.dll
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Application\obj\Debug\net8.0\jobquest.F6CE7B26.Up2Date

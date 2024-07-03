@@ -130,7 +130,6 @@ C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\sta
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.jobquest.Api.props
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\scopedcss\bundle\jobquest.Api.styles.css
-C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\jobquest.Api.csproj.CopyComplete
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\jobquest.Api.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\refint\jobquest.Api.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\jobquest.Api.pdb
@@ -139,6 +138,7 @@ C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\ref
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\jobquest.1DC30CCF.Up2Date
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
