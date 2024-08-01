@@ -52,7 +52,8 @@ public class CreateJobPostHandlers : IRequestHandler<CreateJobPostCommand, JobPo
             jobPost.Description,
             jobPost.FieldOfWork,
             jobPost.Location,
-            jobPost.EndsAt
+            jobPost.EndsAt,
+            jobPost.CreatedOn
         );
 
         return jobPostDto;

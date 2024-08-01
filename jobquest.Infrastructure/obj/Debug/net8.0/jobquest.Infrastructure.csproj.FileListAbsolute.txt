@@ -33,4 +33,4 @@ C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Infrastructure\obj\Debug
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Infrastructure\obj\Debug\net8.0\refint\jobquest.Infrastructure.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Infrastructure\obj\Debug\net8.0\jobquest.Infrastructure.pdb
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Infrastructure\obj\Debug\net8.0\ref\jobquest.Infrastructure.dll
-C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Infrastructure\obj\Debug\net8.0\jobquest.9C0B82E8.Up2Date
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Infrastructure\obj\Debug\net8.0\jobquest.Infrastructure.csproj.CopyComplete

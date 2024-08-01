@@ -48,7 +48,8 @@ public class GetAllHandler : IRequestHandler<GetAllQuery, List<JobPostDto>>
                 jobPost.Description,
                 jobPost.FieldOfWork,
                 jobPost.Location,
-                jobPost.EndsAt
+                jobPost.EndsAt,
+                jobPost.CreatedOn
             );
             jobPostDtos.Add(jobPostDto);
         }

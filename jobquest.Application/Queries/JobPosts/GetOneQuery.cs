@@ -31,7 +31,8 @@ public class GetOneHandler : IRequestHandler<GetOneQuery, JobPostDto>
             jobPost.Description,
             jobPost.FieldOfWork,
             jobPost.Location,
-            jobPost.EndsAt
+            jobPost.EndsAt,
+            jobPost.CreatedOn
         );
         return jobPostDto;
     }
