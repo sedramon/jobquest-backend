@@ -11,5 +11,7 @@ public class MappingProfile : Profile
         CreateMap<UserDto, User>()
             .ForMember(dest => dest.Phone, opt => opt.MapFrom(src => src.Phone ?? string.Empty))
             .ReverseMap();
+        
+        CreateMap<User, UserDisplayDto>().ReverseMap(); 
     }
 }

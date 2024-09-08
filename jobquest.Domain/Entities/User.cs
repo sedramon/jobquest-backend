@@ -11,6 +11,12 @@ public class User : Entity, ICreatedOn, IModifiedOn
     public string LastName { get; set; }
     [Field("phone")]
     public string Phone { get; set; }
+    [Field("address")]
+    public string Address { get; set; }
+    [Field("date_of_birth")]
+    public string DateOfBirth { get; set; }
+    [Field("Interest")]
+    public string Interest { get; set; }
     [Field("email")]
     public string Email { get; set; }
     [Field("password")]

@@ -625,6 +625,24 @@
           }
         }
       },
+      "MongoDB.Driver.GridFS/2.25.0": {
+        "type": "package",
+        "dependencies": {
+          "MongoDB.Bson": "2.25.0",
+          "MongoDB.Driver": "2.25.0",
+          "MongoDB.Driver.Core": "2.25.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/MongoDB.Driver.GridFS.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.GridFS.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MongoDB.Entities/23.1.0": {
         "type": "package",
         "dependencies": {
@@ -922,6 +940,7 @@
           "MongoDB.Bson": "2.25.0",
           "MongoDB.Driver": "2.25.0",
           "MongoDB.Driver.Core": "2.25.0",
+          "MongoDB.Driver.GridFS": "2.25.0",
           "MongoDB.Entities": "23.1.0",
           "MongoRepository": "1.6.11",
           "jobquest.Application": "1.0.0"
@@ -2090,6 +2109,25 @@
         "lib/netstandard2.1/MongoDB.Driver.Core.xml",
         "mongodb.driver.core.2.25.0.nupkg.sha512",
         "mongodb.driver.core.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "MongoDB.Driver.GridFS/2.25.0": {
+      "sha512": "RFvBxqr0H16pzLfuPHsyyVvRfr2nR/GjnBMOcfkxDwwlEipR2l9HI/7OFSaKs4wED+YjwIsd4GJ+eb2bLYkQxA==",
+      "type": "package",
+      "path": "mongodb.driver.gridfs/2.25.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net472/MongoDB.Driver.GridFS.dll",
+        "lib/net472/MongoDB.Driver.GridFS.xml",
+        "lib/netstandard2.0/MongoDB.Driver.GridFS.dll",
+        "lib/netstandard2.0/MongoDB.Driver.GridFS.xml",
+        "lib/netstandard2.1/MongoDB.Driver.GridFS.dll",
+        "lib/netstandard2.1/MongoDB.Driver.GridFS.xml",
+        "mongodb.driver.gridfs.2.25.0.nupkg.sha512",
+        "mongodb.driver.gridfs.nuspec",
         "packageIcon.png"
       ]
     },

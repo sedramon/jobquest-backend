@@ -1,3 +1,3 @@
 ﻿namespace jobquest.Application.Common.Dtos;
 
-public record ApplicationDto(string? ID, JobPostDto? JobPost, UserDto? User, DateTime? CreatedOn, DateTime? ModifiedOn);
+public record ApplicationDto(string? ID, JobPostDto? JobPost, UserDisplayDto? User, DateTime? CreatedOn, DateTime? ModifiedOn);

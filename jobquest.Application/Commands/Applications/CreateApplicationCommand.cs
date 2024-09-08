@@ -61,7 +61,7 @@ public class CreateApplicationHandlers : IRequestHandler<CreateApplicationComman
             var applicationDto = new ApplicationDto(
                 application.ID,
                 jobPostDto,
-                _mapper.Map<UserDto>(user),
+                _mapper.Map<UserDisplayDto>(user),
                 application.CreatedOn,
                 application.ModifiedOn
             );

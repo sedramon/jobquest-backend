@@ -289,6 +289,10 @@
               "target": "Package",
               "version": "[2.25.0, )"
             },
+            "MongoDB.Driver.GridFS": {
+              "target": "Package",
+              "version": "[2.25.0, )"
+            },
             "MongoDB.Entities": {
               "target": "Package",
               "version": "[23.1.0, )"

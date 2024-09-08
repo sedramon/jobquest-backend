@@ -387,6 +387,19 @@
           }
         }
       },
+      "MongoDB.Driver.GridFS/2.25.0": {
+        "dependencies": {
+          "MongoDB.Bson": "2.25.0",
+          "MongoDB.Driver": "2.25.0",
+          "MongoDB.Driver.Core": "2.25.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MongoDB.Driver.GridFS.dll": {
+            "assemblyVersion": "2.25.0.0",
+            "fileVersion": "2.25.0.0"
+          }
+        }
+      },
       "MongoDB.Entities/23.1.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -550,6 +563,7 @@
           "MongoDB.Bson": "2.25.0",
           "MongoDB.Driver": "2.25.0",
           "MongoDB.Driver.Core": "2.25.0",
+          "MongoDB.Driver.GridFS": "2.25.0",
           "MongoDB.Entities": "23.1.0",
           "MongoRepository": "1.6.11",
           "jobquest.Application": "1.0.0"
@@ -831,6 +845,13 @@
       "sha512": "sha512-oN4nLgO5HQEThTg/zqeoHqaO2+q64DBVb4r7BvhaFb0p0TM9jZKnCKvh1EA8d9E9swIz0CgvMrvL1mPyRCZzag==",
       "path": "mongodb.driver.core/2.25.0",
       "hashPath": "mongodb.driver.core.2.25.0.nupkg.sha512"
+    },
+    "MongoDB.Driver.GridFS/2.25.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RFvBxqr0H16pzLfuPHsyyVvRfr2nR/GjnBMOcfkxDwwlEipR2l9HI/7OFSaKs4wED+YjwIsd4GJ+eb2bLYkQxA==",
+      "path": "mongodb.driver.gridfs/2.25.0",
+      "hashPath": "mongodb.driver.gridfs.2.25.0.nupkg.sha512"
     },
     "MongoDB.Entities/23.1.0": {
       "type": "package",

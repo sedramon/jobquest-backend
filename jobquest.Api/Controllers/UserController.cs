@@ -43,4 +43,17 @@ public class UserController : ApplicationController
         }
         
     }
+    
+    [HttpPut("update")]
+    public async Task<IActionResult> UpdateUser(UserDto dto)
+    {
+        try
+        {
+            return Ok(await Mediator.Send(new UpdateUserCommand(dto)));
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
+        }
+    }
 }

@@ -9,9 +9,9 @@ using MongoDB.Entities;
 namespace jobquest.Application.Queries.Users;
 
 
-public record GetAllQuery : IRequest<List<UserDto>>;
+public record GetAllQuery : IRequest<List<UserDisplayDto>>;
 
-public class GetAllHandler : IRequestHandler<GetAllQuery, List<UserDto>>
+public class GetAllHandler : IRequestHandler<GetAllQuery, List<UserDisplayDto>>
 {
     private readonly IMapper _mapper;
 
@@ -20,9 +20,8 @@ public class GetAllHandler : IRequestHandler<GetAllQuery, List<UserDto>>
         _mapper = mapper;
     }
 
-    public async Task<List<UserDto>> Handle(GetAllQuery request, CancellationToken cancellationToken)
+    public async Task<List<UserDisplayDto>> Handle(GetAllQuery request, CancellationToken cancellationToken)
     {
-        return _mapper.Map<List<UserDto>>(await DB.Fluent<User>().ToListAsync(cancellationToken: cancellationToken));
+        return _mapper.Map<List<UserDisplayDto>>(await DB.Fluent<User>().ToListAsync(cancellationToken: cancellationToken));
     }
-
 }

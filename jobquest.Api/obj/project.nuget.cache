@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ecugk3Srvw7rp6omoeMyUMsxNv1I8xppYUmAFI8TiSJNNnL6H8QR0Rdxw9Rg7GQEqk0ZPdwxysYIIBRoonTfUA==",
+  "dgSpecHash": "AMfmyhgx3XUdwupZGnZPlxYAzw8TIyvQpw6NQ67ltRjJmO7FkTxZM6oYKaNYEsLbCLzugS/EFTL7iQuk+PmY2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aljosa\\RiderProjects\\jobquest-backend\\jobquest.Api\\jobquest.Api.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "C:\\Users\\Aljosa\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
     "C:\\Users\\Aljosa\\.nuget\\packages\\mongodb.driver\\2.25.0\\mongodb.driver.2.25.0.nupkg.sha512",
     "C:\\Users\\Aljosa\\.nuget\\packages\\mongodb.driver.core\\2.25.0\\mongodb.driver.core.2.25.0.nupkg.sha512",
+    "C:\\Users\\Aljosa\\.nuget\\packages\\mongodb.driver.gridfs\\2.25.0\\mongodb.driver.gridfs.2.25.0.nupkg.sha512",
     "C:\\Users\\Aljosa\\.nuget\\packages\\mongodb.entities\\23.1.0\\mongodb.entities.23.1.0.nupkg.sha512",
     "C:\\Users\\Aljosa\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.2\\mongodb.libmongocrypt.1.8.2.nupkg.sha512",
     "C:\\Users\\Aljosa\\.nuget\\packages\\mongorepository\\1.6.11\\mongorepository.1.6.11.nupkg.sha512",

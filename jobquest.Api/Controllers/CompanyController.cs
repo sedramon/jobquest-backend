@@ -32,4 +32,17 @@ public class CompanyController : ApplicationController
             return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
         }
     }
+    
+    [HttpPut("update")]
+    public async Task<IActionResult> UpdateCompany(CompanyDto dto)
+    {
+        try
+        {
+            return Ok(await Mediator.Send(new UpdateCompanyCommand(dto)));
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
+        }
+    }
 }
