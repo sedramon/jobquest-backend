@@ -1,3 +1,4 @@
+using MongoDB.Bson;
 using MongoDB.Entities;
 
 namespace jobquest.Domain.Entities;
@@ -21,6 +22,8 @@ public class User : Entity, ICreatedOn, IModifiedOn
     public string Email { get; set; }
     [Field("password")]
     public string Password { get; set; }
+    [Field("profile_picture_id")]  // Store the GridFS file ID
+    public ObjectId? ProfilePictureId { get; set; }
     [Field("created_on")]
     public DateTime CreatedOn { get; set; }
     [Field("modified_on")]
