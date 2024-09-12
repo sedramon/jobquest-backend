@@ -26,6 +26,9 @@ public class UpdateUserHandler : IRequestHandler<UpdateUserCommand, UserDto>
         user.Email = request.UserDto.Email;
         user.Phone = request.UserDto.Phone;
         user.Password = request.UserDto.Password;
+        user.Interest = request.UserDto.Interest;
+        user.DateOfBirth = request.UserDto.DateOfBirth;
+        user.Address = request.UserDto.Address;
 
         await user.SaveAsync(cancellation: cancellationToken);
 

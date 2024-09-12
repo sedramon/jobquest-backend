@@ -2,6 +2,8 @@ using jobquest.Application.Commands.Users;
 using jobquest.Application.Common.Dtos;
 using jobquest.Application.Exceptions;
 using jobquest.Application.Queries.Users;
+using jobquest.Domain.Entities;
+using jobquest.Infrastructure.Services.Files;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Entities;
@@ -13,10 +15,13 @@ namespace jobquest_backend.Controllers;
 public class UserController : ApplicationController
 {
     private readonly ILogger<UserController> _logger;
+    private readonly FileService _fileService;
 
-    public UserController(ILogger<UserController> logger)
+
+    public UserController(ILogger<UserController> logger, FileService fileService)
     {
         _logger = logger;
+        _fileService = fileService;
     }
     
     [HttpGet("get/all")]
@@ -56,4 +61,57 @@ public class UserController : ApplicationController
             return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
         }
     }
+    
+    [HttpPost("upload-profile-picture")]
+    public async Task<IActionResult> UploadProfilePicture(IFormFile file, string userId)
+    {
+        if (file == null || file.Length == 0)
+            return BadRequest("No file uploaded.");
+
+        try
+        {
+            using (var fileStream = file.OpenReadStream())
+            {
+                var fileId = await _fileService.UploadFileAsync(fileStream, file.FileName, file.ContentType, userId);
+
+                // Update the user with the profile picture ID
+                var user = await DB.Find<User>().OneAsync(userId);
+                if (user == null)
+                    return NotFound("User not found.");
+
+                user.ProfilePictureId = fileId;
+                await user.SaveAsync();
+
+                return Ok(new { fileId });
+            }
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while uploading the profile picture.");
+            return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
+        }
+    }
+    
+    [HttpGet("get-profile-picture/{userId}")]
+    public async Task<IActionResult> GetProfilePicture(string userId)
+    {
+        try
+        {
+            var user = await DB.Find<User>().OneAsync(userId);
+            if (user == null || user.ProfilePictureId == null)
+                return NotFound("Profile picture not found.");
+
+            var fileData = await _fileService.DownloadFileAsync(user.ProfilePictureId.Value);
+            var fileInfo = await _fileService.GetFileMetadataAsync(user.ProfilePictureId.Value);
+
+            return File(fileData, fileInfo.Metadata["contentType"].AsString);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while retrieving the profile picture.");
+            return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
+        }
+    }
+    
+    
 }
