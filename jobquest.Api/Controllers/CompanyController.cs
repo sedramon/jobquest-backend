@@ -2,7 +2,9 @@
 using jobquest.Application.Common.Dtos;
 using jobquest.Application.Exceptions;
 using jobquest.Application.Queries.Companies;
+using jobquest.Application.Queries.JobPosts;
 using Microsoft.AspNetCore.Mvc;
+using GetAllQuery = jobquest.Application.Queries.Companies.GetAllQuery;
 
 namespace jobquest_backend.Controllers;
 
@@ -45,4 +47,6 @@ public class CompanyController : ApplicationController
             return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
         }
     }
+    
+    
 }

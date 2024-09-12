@@ -21,4 +21,18 @@ public class JobPostController : ApplicationController
     
     [HttpGet("get/one")]
     public async Task<OkObjectResult> GetOne(string jobPostId) => Ok(await Mediator.Send(new GetOneQuery(jobPostId)));
+    
+    [HttpGet("{companyId}/jobposts")]
+    public async Task<IActionResult> GetJobPostsByCompanyId(string companyId)
+    {
+        try
+        {
+            var jobPosts = await Mediator.Send(new GetAllByCompanyIdQuery(companyId));
+            return Ok(jobPosts);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
+        }
+    }
 }
