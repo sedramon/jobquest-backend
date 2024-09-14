@@ -39,6 +39,29 @@ public class FileController : ControllerBase
             return Ok(new { FileId = fileId.ToString() });
         }
     }
+    
+    [HttpPost("upload-application-file")]
+    public async Task<IActionResult> UploadApplicationFile(IFormFile file, string userId, string jobPostId)
+    {
+        if (file == null || file.Length == 0)
+            return BadRequest("No file uploaded.");
+
+        try
+        {
+            using (var fileStream = file.OpenReadStream())
+            {
+                // Add metadata for userId and jobPostId
+                var fileId = await _fileService.UploadFileForApplicationAsync(fileStream, file.FileName, file.ContentType, userId, jobPostId);
+
+                // Return the fileId and optionally metadata
+                return Ok(new { fileId });
+            }
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
+        }
+    }
 
     // Example to download a file by ObjectId
     [HttpGet("download/{id}")]
@@ -68,8 +91,15 @@ public class FileController : ControllerBase
     [HttpGet("user-files/{userId}")]
     public async Task<IActionResult> GetFilesByUserId(string userId)
     {
-        // Pretraži GridFS po userId
-        var filter = Builders<GridFSFileInfo>.Filter.Eq("metadata.userId", userId);
+        // Filter to find files by userId and exclude those that have a jobPostId in metadata
+        var filter = Builders<GridFSFileInfo>.Filter.And(
+            Builders<GridFSFileInfo>.Filter.Eq("metadata.userId", userId),
+            Builders<GridFSFileInfo>.Filter.Or(
+                Builders<GridFSFileInfo>.Filter.Exists("metadata.jobPostId", false),  // Files without jobPostId
+                Builders<GridFSFileInfo>.Filter.Eq("metadata.jobPostId", BsonNull.Value)  // Files with null jobPostId
+            )
+        );
+
         var fileInfos = await _gridFSBucket.Find(filter).ToListAsync();
 
         if (fileInfos == null || !fileInfos.Any())
@@ -77,7 +107,7 @@ public class FileController : ControllerBase
             return NotFound("No files found for this user.");
         }
 
-        // Napravi listu fajlova sa osnovnim informacijama
+        // Create a list of file information
         var files = fileInfos.Select(fileInfo => new
         {
             FileId = fileInfo.Id.ToString(),
@@ -88,5 +118,41 @@ public class FileController : ControllerBase
 
         return Ok(files);
     }
+
+    
+    [HttpGet("download/{userId}/{jobPostId}")]
+    public async Task<IActionResult> DownloadFileByUserAndJobPostId(string userId, string jobPostId)
+    {
+        try
+        {
+            // Download the file
+            var fileBytes = await _fileService.DownloadFileByUserAndJobPostAsync(userId, jobPostId);
+
+            // Get the file metadata for the content type and file name
+            var filter = Builders<GridFSFileInfo>.Filter.And(
+                    Builders<GridFSFileInfo>.Filter.Eq("metadata.userId", userId),
+                Builders<GridFSFileInfo>.Filter.Eq("metadata.jobPostId", jobPostId)
+                );
+
+            var fileInfo = await _gridFSBucket.Find(filter).FirstOrDefaultAsync();
+            var contentType = fileInfo.Metadata.GetValue("contentType").AsString ?? "application/octet-stream";
+            var fileName = fileInfo.Filename;
+
+            // Return the file with the correct content type and file name
+            return new FileStreamResult(new MemoryStream(fileBytes), contentType)
+            {
+                FileDownloadName = fileName
+            };
+        }
+        catch (FileNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "Internal server error.");
+        }
+    }
+
 
 }

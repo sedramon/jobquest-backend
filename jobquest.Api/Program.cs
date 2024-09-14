@@ -1,7 +1,9 @@
 using jobquest_backend.Configuration;
 using jobquest.Application;
 using jobquest.Application.Commands.Authentication;
+
 using jobquest.Infrastructure;
+
 using Microsoft.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 builder.Services.AddScoped<ITokenService, TokenService>();
 

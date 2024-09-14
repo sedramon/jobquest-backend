@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jobquest.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aecdf75055b145fbda4a2d0c066e96b44f2aaa7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a336785b430b2df295db0708573cb1f846dab29b")]
 [assembly: System.Reflection.AssemblyProductAttribute("jobquest.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jobquest.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

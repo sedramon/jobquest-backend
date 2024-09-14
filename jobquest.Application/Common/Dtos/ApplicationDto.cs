@@ -1,3 +1,10 @@
-﻿namespace jobquest.Application.Common.Dtos;
+﻿using MongoDB.Bson;
 
-public record ApplicationDto(string? ID, JobPostDto? JobPost, UserDisplayDto? User, DateTime? CreatedOn, DateTime? ModifiedOn);
+namespace jobquest.Application.Common.Dtos;
+
+public record ApplicationDto(
+    string? ID, 
+    JobPostDto? JobPost, 
+    UserDisplayDto? User,
+    DateTime? CreatedOn, 
+    DateTime? ModifiedOn);

@@ -1,4 +1,5 @@
-﻿using MongoDB.Entities;
+﻿using MongoDB.Bson;
+using MongoDB.Entities;
 
 namespace jobquest.Domain.Entities;
 

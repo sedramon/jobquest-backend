@@ -19,6 +19,9 @@ public class JobPostController : ApplicationController
     public async Task<OkObjectResult> DeleteJobPost(string jobPostId) =>
         Ok(await Mediator.Send(new DeleteJobPostCommand(jobPostId)));
     
+    [HttpPut("update")]
+    public async Task<OkObjectResult> UpdateJobPost(JobPostDto dto) => Ok(await Mediator.Send(new UpdateJobPostCommand(dto)));
+    
     [HttpGet("get/one")]
     public async Task<OkObjectResult> GetOne(string jobPostId) => Ok(await Mediator.Send(new GetOneQuery(jobPostId)));
     

@@ -9,6 +9,7 @@ namespace jobquest_backend.Controllers;
 [ApiController]
 [Route("api/application")]
 public class JobApplicationsController : ApplicationController
+
 {
     [HttpPost("create")]
     public async Task<OkObjectResult> CreateApplication(ApplicationDto dto) => Ok(await Mediator.Send(new CreateApplicationCommand(dto)));

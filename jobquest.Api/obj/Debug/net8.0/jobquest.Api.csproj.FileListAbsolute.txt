@@ -147,4 +147,4 @@ C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\Mic
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\bin\Debug\net8.0\MongoDB.Driver.GridFS.dll
-C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\jobquest.1DC30CCF.Up2Date
+C:\Users\Aljosa\RiderProjects\jobquest-backend\jobquest.Api\obj\Debug\net8.0\jobquest.Api.csproj.CopyComplete
