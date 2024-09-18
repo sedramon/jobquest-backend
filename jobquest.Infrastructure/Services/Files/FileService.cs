@@ -56,6 +56,12 @@ public class FileService
         }
     }
     
+    public async Task DeleteFileAsync(ObjectId fileId)
+    {
+        // Delete the file from GridFS by its file ID
+        await _gridFSBucket.DeleteAsync(fileId);
+    }
+    
     public async Task<byte[]> DownloadFileByUserAndJobPostAsync(string userId, string jobPostId)
     {
         // Create a filter to find files with the specified userId and jobPostId

@@ -45,12 +45,10 @@ public class CreateJobPostHandlers : IRequestHandler<CreateJobPostCommand, JobPo
 
         await jobPost.SaveAsync(cancellation: cancellationToken);
 
-        var jobPostDto = new JobPostDto(
-            jobPost.ID,
-            jobPost.Title,
-            company.ID != null ? _mapper.Map<CompanyDto>(company) : null,
-            jobPost.Description,
-            jobPost.FieldOfWork,
+        var jobPostDto = new JobPostDto(jobPost.ID, jobPost.Title, 
+            company.ID != null ? _mapper.Map<CompanyDto>(company) : null, 
+            jobPost.Description, 
+            jobPost.FieldOfWork, 
             jobPost.Location,
             jobPost.EndsAt,
             jobPost.CreatedOn

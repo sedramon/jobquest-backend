@@ -28,10 +28,7 @@ public class CreateApplicationHandlers : IRequestHandler<CreateApplicationComman
             .Match(jp => jp.ID == request.ApplicationDto.JobPost.ID)
             .FirstOrDefaultAsync(cancellationToken: cancellationToken);
         
-
         var jobPostDto = _mapper.Map<JobPostDto>(jobPost);
-
-        
         if (user == null)
         {
             throw new Exception("User not found");
@@ -48,8 +45,6 @@ public class CreateApplicationHandlers : IRequestHandler<CreateApplicationComman
             ModifiedOn = DateTime.UtcNow
         };
         
-        
-
         application.JobPost = new One<JobPost>(jobPost.ID);
         application.User = new One<User>(user.ID);
 
@@ -58,19 +53,12 @@ public class CreateApplicationHandlers : IRequestHandler<CreateApplicationComman
 
         if (saveTask.IsCompletedSuccessfully)
         {
-            var applicationDto = new ApplicationDto(
-                application.ID,
-                jobPostDto,
-                _mapper.Map<UserDisplayDto>(user),
-                application.CreatedOn,
-                application.ModifiedOn
-            );
+            var applicationDto = new ApplicationDto(application.ID, jobPostDto, _mapper.Map<UserDisplayDto>(user), application.CreatedOn, application.ModifiedOn);
 
             return applicationDto;
         }
         else
         {
-            // Handle the case when the save operation fails
             throw new Exception("Failed to save the application");
         }
     }

@@ -118,6 +118,31 @@ public class FileController : ControllerBase
 
         return Ok(files);
     }
+    
+    [HttpDelete("delete/{id}")]
+    public async Task<IActionResult> DeleteFile(string id)
+    {
+        if (!ObjectId.TryParse(id, out ObjectId fileId))
+        {
+            return BadRequest("Invalid file ID.");
+        }
+
+        try
+        {
+            // Call the service to delete the file
+            await _fileService.DeleteFileAsync(fileId);
+            return Ok($"File with ID {id} deleted successfully.");
+        }
+        catch (GridFSFileNotFoundException)
+        {
+            return NotFound("File not found.");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while deleting the file.");
+        }
+    }
+
 
     
     [HttpGet("download/{userId}/{jobPostId}")]

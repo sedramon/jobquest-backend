@@ -16,7 +16,7 @@ public class User : Entity, ICreatedOn, IModifiedOn
     public string Address { get; set; }
     [Field("date_of_birth")]
     public string DateOfBirth { get; set; }
-    [Field("Interest")]
+    [Field("interest")]
     public string Interest { get; set; }
     [Field("email")]
     public string Email { get; set; }
